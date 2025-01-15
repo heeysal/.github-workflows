@@ -20,7 +20,7 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
     - name: Build the Docker image
-      run: docker build . -t yourusername/flask-ml-docker
+      run: docker build . -t heysal/flask-ml-docker
 
     - name: Push the Docker image
-      run: docker push yourusername/flask-ml-docker
+      run: docker push heysal/flask-ml-docker
